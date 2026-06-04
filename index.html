@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MySuru Brew – Artisan Coffee & Brews in Mysuru</title>
+  <meta name="description" content="MySuru Brew – Your cozy neighbourhood café in Mysuru. Handcrafted coffee, local brews, and warm vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">MySuru <span>Brew</span></a>
+      <button class="burger" id="burger" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Find Us</a></li>
+        <li><a href="#contact" class="btn-nav">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Rooted in Mysuru · Brewed with Love</p>
+      <h1>Where Every Sip<br/><em>Tells a Story</em></h1>
+      <p class="hero-sub">Artisan coffee, local single-origin brews and cozy corners<br/>right in the heart of Mysuru.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn-secondary">Visit Us</a>
+      </div>
+    </div>
+    <div class="scroll-hint">&#8595; Scroll to explore</div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>☕ Single Origin Pour-Over</span>
+      <span>🌿 Cold Brew Specials</span>
+      <span>🍵 Mysuru Filter Kaapi</span>
+      <span>🥐 Fresh Bakes Daily</span>
+      <span>🫙 House Ferments</span>
+      <span>🎵 Live Music Fridays</span>
+      <span>☕ Single Origin Pour-Over</span>
+      <span>🌿 Cold Brew Specials</span>
+      <span>🍵 Mysuru Filter Kaapi</span>
+      <span>🥐 Fresh Bakes Daily</span>
+      <span>🫙 House Ferments</span>
+      <span>🎵 Live Music Fridays</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-bg"></div>
+        <div class="about-img-frame">
+          <img src="assets/about.jpg" alt="Inside MySuru Brew café" onerror="this.style.display='none'" />
+          <div class="about-img-placeholder">
+            <span>☕</span>
+          </div>
+        </div>
+        <div class="about-badge">Est. 2024</div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2>Born from the<br/><em>Spirit of Mysuru</em></h2>
+        <p>MySuru Brew started as a simple idea — bring world-class specialty coffee to the culturally rich city of Mysuru. We source beans from the Coorg and Chikmagalur estates, roast them in small batches, and brew each cup with intention.</p>
+        <p>Beyond coffee, we celebrate local flavors. Our menu weaves Mysurean culinary tradition with modern café culture — a place to slow down, connect, and savour.</p>
+        <div class="about-stats">
+          <div class="stat"><span>12+</span><small>Single-Origin Beans</small></div>
+          <div class="stat"><span>50+</span><small>Menu Items</small></div>
+          <div class="stat"><span>∞</span><small>Good Vibes</small></div>
+        </div>
+        <a href="#menu" class="btn-primary">See Our Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <p class="section-tag center">What We Brew</p>
+      <h2 class="center">Our <em>Menu</em></h2>
+      <p class="section-lead center">Fresh, handcrafted, and made to order — every single time.</p>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="coffee">Coffee</button>
+        <button class="tab" data-tab="brews">Brews & Tea</button>
+        <button class="tab" data-tab="food">Food</button>
+        <button class="tab" data-tab="cold">Cold Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- SPECIALS -->
+  <section id="specials">
+    <div class="container">
+      <p class="section-tag center">This Season</p>
+      <h2 class="center"><em>Seasonal</em> Specials</h2>
+      <div class="specials-grid">
+        <div class="special-card">
+          <div class="special-icon">🌸</div>
+          <h3>Rose Cold Brew</h3>
+          <p>24-hour cold-steeped Arabica infused with Mysuru rose water and a hint of cardamom. Served over ice.</p>
+          <span class="price">₹ 220</span>
+        </div>
+        <div class="special-card featured">
+          <div class="special-badge">Chef's Pick</div>
+          <div class="special-icon">🏆</div>
+          <h3>Royal Mysuru Kaapi</h3>
+          <p>Our signature blend — a bold Robusta-Arabica filter kaapi, finished with jaggery cream and a Mysuru sandalwood dust garnish.</p>
+          <span class="price">₹ 180</span>
+        </div>
+        <div class="special-card">
+          <div class="special-icon">🌿</div>
+          <h3>Tulsi Green Brew</h3>
+          <p>Fresh Tulsi leaves cold-pressed with single-origin green tea from the Nilgiris. Light, herbal, and grounding.</p>
+          <span class="price">₹ 160</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE STRIP -->
+  <section id="experience">
+    <div class="container exp-grid">
+      <div class="exp-item">
+        <div class="exp-icon">🫘</div>
+        <h3>Small-Batch Roasts</h3>
+        <p>We roast every week in micro-batches so your cup is always at peak freshness.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">📖</div>
+        <h3>Brew Library</h3>
+        <p>Pick a book, pick a brew. Our curated shelves invite you to stay a little longer.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">🎵</div>
+        <h3>Live Sessions</h3>
+        <p>Every Friday evening we host local musicians for intimate acoustic sets.</p>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">🌱</div>
+        <h3>Zero-Waste Kitchen</h3>
+        <p>Spent coffee grounds go to our partner urban farms. Packaging is 100% compostable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <p class="section-tag center">Captured Moments</p>
+      <h2 class="center">The <em>Vibe</em></h2>
+      <div class="gallery-grid">
+        <div class="gal-item gal-large" style="background:#c8a98a"><span>☕</span></div>
+        <div class="gal-item" style="background:#a0785a"><span>🫘</span></div>
+        <div class="gal-item" style="background:#7a5c44"><span>🥐</span></div>
+        <div class="gal-item" style="background:#b89070"><span>🌿</span></div>
+        <div class="gal-item gal-wide" style="background:#9a7858"><span>🎵</span></div>
+      </div>
+      <p class="gallery-note">Tag us <strong>@mysurubrew</strong> on Instagram</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <p class="section-tag center">Guests Say</p>
+      <h2 class="center">Loved by <em>Mysureans</em></h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Royal Mysuru Kaapi is unlike anything I've had. Perfectly balanced, deeply aromatic — I come back every weekend."</p>
+          <div class="testi-author">— Ananya R., Mysuru</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Cozy ambiance, wonderful staff, and the cold brew is genuinely world-class. My go-to WFH spot in the city."</p>
+          <div class="testi-author">— Kiran M., Bangalore</div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Love that they source locally and care about sustainability. The Tulsi brew is my daily ritual now!"</p>
+          <div class="testi-author">— Priya S., Mysuru</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FIND US -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-tag">Find Us</p>
+        <h2>Come <em>Say Hello</em></h2>
+        <div class="info-block">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>MySuru Brew, Sayyaji Rao Road,<br/>Near Devaraja Market, Mysuru – 570001<br/>Karnataka, India</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <p>Monday – Friday: 7:30 AM – 9:00 PM<br/>Saturday – Sunday: 8:00 AM – 10:00 PM</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Contact</strong>
+            <p><a href="tel:+918212345678">+91 821 234 5678</a><br/><a href="mailto:hello@mysurubrew.com">hello@mysurubrew.com</a></p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your message..." rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Send Message &#8594;</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          ☕ Thank you! We'll get back to you soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.8!2d76.6394!3d12.3051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70181c57a9bd%3A0xd15e3ef3a0c9c2ed!2sDevaraja%20Market%2C%20Mysuru!5e0!3m2!1sen!2sin!4v1700000000000"
+      width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="MySuru Brew location">
+    </iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="logo">MySuru <span>Brew</span></p>
+        <p>Handcrafted with love in Mysuru.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:hello@mysurubrew.com">Email Us</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 MySuru Brew. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
