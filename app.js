@@ -1,5 +1,15 @@
 /* MySuru Brew – app.js */
 
+/* ---- Coming soon banner close ---- */
+const banner = document.getElementById('coming-soon-banner');
+const closeBanner = banner?.querySelector('.cs-close');
+if (closeBanner) {
+  closeBanner.addEventListener('click', () => {
+    banner.style.display = 'none';
+    navbar.classList.add('banner-hidden');
+  });
+}
+
 /* ---- Navbar scroll effect ---- */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {

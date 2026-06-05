@@ -103,6 +103,46 @@ h3 { font-size: 1.2rem; color: var(--espresso); margin-bottom: 8px; }
 .btn-nav:hover { background: var(--espresso); }
 
 /* =============================================
+   COMING SOON BANNER
+   ============================================= */
+#coming-soon-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 2000;
+  background: linear-gradient(90deg, var(--espresso) 0%, #5a3825 50%, var(--espresso) 100%);
+  color: var(--tan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 48px;
+  font-size: .88rem;
+  letter-spacing: .04em;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+.cs-icon { font-size: 1.1rem; animation: steam 2s ease-in-out infinite; }
+@keyframes steam { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+.cs-text strong { color: var(--gold); }
+.cs-close {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--tan);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: .7;
+  transition: var(--transition);
+  line-height: 1;
+}
+.cs-close:hover { opacity: 1; color: var(--gold); }
+
+/* Push navbar down when banner is visible */
+#navbar { top: 42px; }
+#navbar.banner-hidden { top: 0; }
+
+/* =============================================
    NAVBAR
    ============================================= */
 #navbar {
