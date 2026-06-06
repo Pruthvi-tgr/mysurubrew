@@ -655,3 +655,99 @@ footer .logo { font-family: var(--font-head); font-size: 1.6rem; font-weight: 70
   transition: opacity .7s ease, transform .7s ease;
 }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* =============================================
+   NEWSLETTER
+   ============================================= */
+#newsletter {
+  background: var(--espresso);
+  padding: 80px 0;
+}
+.newsletter-inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.newsletter-text { flex: 1; min-width: 260px; }
+.newsletter-text .section-tag { color: var(--tan); }
+.newsletter-text h2 { color: var(--white); font-size: clamp(1.8rem,3vw,2.4rem); margin: 8px 0 12px; }
+.newsletter-text h2 em { color: var(--gold); }
+.newsletter-text p { color: var(--tan); }
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 280px;
+}
+.newsletter-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px 20px;
+  border: 2px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  background: rgba(255,255,255,.08);
+  color: var(--white);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.newsletter-form input::placeholder { color: rgba(255,255,255,.45); }
+.newsletter-form input:focus { border-color: var(--gold); }
+.newsletter-success {
+  display: none;
+  color: var(--gold);
+  font-weight: 700;
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* =============================================
+   WHATSAPP FLOAT
+   ============================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 56px;
+  height: 56px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4);
+  z-index: 900;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.whatsapp-float svg { width: 28px; height: 28px; }
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.55); }
+
+/* =============================================
+   BACK TO TOP
+   ============================================= */
+.back-to-top {
+  position: fixed;
+  bottom: 96px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background: var(--coffee);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity var(--transition), transform var(--transition);
+  z-index: 900;
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover { background: var(--espresso); }

@@ -113,3 +113,18 @@ function handleForm(e) {
   e.target.reset();
   setTimeout(() => { success.style.display = 'none'; }, 5000);
 }
+
+/* ---- Newsletter form ---- */
+function handleNewsletter(e) {
+  e.preventDefault();
+  const success = document.getElementById('newsletterSuccess');
+  success.style.display = 'block';
+  e.target.reset();
+}
+
+/* ---- Back to top ---- */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
